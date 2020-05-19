@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { View, Button, StyleSheet } from "react-native";
-import AuthContext from "../../contexts/auth";
+import { useAuth } from "../../contexts/auth";
 
 const style = StyleSheet.create({
   container: {
@@ -10,7 +10,7 @@ const style = StyleSheet.create({
 });
 
 function Singin() {
-  const { singIn } = useContext(AuthContext);
+  const { singIn } = useAuth();
 
   function handleSingIn() {
     singIn();

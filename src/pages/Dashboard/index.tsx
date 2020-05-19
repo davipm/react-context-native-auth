@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Button, StyleSheet, View, Text } from "react-native";
-import AuthContext from "../../contexts/auth";
+import { useAuth } from "../../contexts/auth";
 
 const style = StyleSheet.create({
   container: {
@@ -13,7 +13,7 @@ const style = StyleSheet.create({
 });
 
 function Dashboard() {
-  const { singOut, user } = useContext(AuthContext);
+  const { singOut, user } = useAuth();
 
   function handleSingInOut() {
     singOut();
