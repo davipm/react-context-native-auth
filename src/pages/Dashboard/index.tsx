@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
-import { Button, StyleSheet, View, Text} from "react-native";
+import React, { useContext } from "react";
+import { Button, StyleSheet, View, Text } from "react-native";
 import AuthContext from "../../contexts/auth";
 
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center'
+    justifyContent: "center",
   },
   text: {
-    textAlign: 'center'
-  }
+    textAlign: "center",
+  },
 });
 
 function Dashboard() {
